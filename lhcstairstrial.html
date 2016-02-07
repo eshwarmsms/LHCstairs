@@ -14,8 +14,8 @@
 
 		<style>
 		@font-face{
-			font-family: 'hello';
-			src: url('assets/fonts/Kannada.ttc');
+			font-family: hello;
+			src: url(/assets/fonts/Kannada.ttc);
 		}
 		body{
 			background: url('assets/images/backtile.png') bottom right repeat;
@@ -25,31 +25,23 @@
 		}
 		
 		header{
+				height: 30%;
 				text-align: center;
 				color: white;
-				background: url('assets/images/header2.jpg') center / cover;	
+				background: url('assets/images/stairs.jpg') center / cover;	
+				display: block;	
 				margin-top: 0px;
 				padding-top: 0px; 
 		}
-		.mdl-layout--small-screen-only{
-				background: url('assets/images/header2.jpg') center / cover;
-		}
-		.mdl-layout-title, .mobile-header > h1{
-			font-family: 'hello';
-			color: rgba(1,1,1,.87);
-		}
 		.demo-layout-transparent {
-			background: url('assets/images/backtile.png') center no-repeat cover;
+			background: url('assets/images/backtile.png') bottom right repeat;
+		  	//background: url('assets/images/stairs.jpg') center / cover;
 		}
 		.demo-layout-transparent .mdl-layout__header,
 		.demo-layout-transparent .mdl-layout__drawer-button {
 		  /* This background is dark, so we set text to white. Use 87% black instead if
 		     your background is light. */
-		  color: rgba(1,1,1,.87);
-		}
-		.mdl-navigation > a{
-			color: rgba(1,1,1,.87);
-			text-decoration: none;
+		  color: white;
 		}
 		.mdl-grid{
 			width: 80%;
@@ -63,23 +55,15 @@
 		}
 		#engg > .mdl-card > .mdl-card__title{
 			background:
-		    url('assets/images/engineer.jpg') center / cover #46B6AC;
+		    url('assets/images/engineer.jpg') bottom right 50% no-repeat  #46B6AC;
 		}
 		#arts > .mdl-card > .mdl-card__title{
 			background:
-		    url('assets/images/arts.jpg') center / cover #46B6AC;
+		    url('assets/images/arts.jpg') bottom right 50% no-repeat #46B6AC;
 		}
 		#sports > .mdl-card > .mdl-card__title{
 			background:
-		    url('assets/images/sports.jpg') center / cover #46B6AC;
-		}
-		#science > .mdl-card > .mdl-card__title{
-			background:
-		    url('assets/images/science.jpg') center / cover #46B6AC;
-		}
-		#commerce > .mdl-card > .mdl-card__title{
-			background:
-		    url('assets/images/commerce.png') center / cover #46B6AC;
+		    url('assets/images/sports.jpg') bottom right 50% no-repeat #46B6AC;
 		}
 </style>
 		</style>
@@ -107,12 +91,12 @@
 			</header>
 		 	<div class="mdl-layout--small-screen-only">
 			  <!-- Mobile Only-->
-				<header class="mobile-header">
+				<header>
 				  <h1>LHCstairs.com</h1>
 				</header>
 			</div>
 			<div class="mdl-layout__drawer">
-			    <span class="mdl-layout-title">LHCstairs.com</span>
+			    <span class="mdl-layout-title">Title</span>
 			    <nav class="mdl-navigation">
 			        <a class="mdl-navigation__link" href="">HOME</a>
 			        <a class="mdl-navigation__link" href="">COURSES</a>
@@ -168,13 +152,13 @@
 							  </div>
 							</div>
 						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="science">
+						  <div class="mdl-cell mdl-cell--4-col" id="sports">
 						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
 							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">SCIENCE</h2>
+							    <h2 class="mdl-card__title-text">SPORTS</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
-							    From Chemistry to Physics, LHCstairs is your best friend. 
+							    From football to Table Tennis, LHCstairs is your best friend. 
 							  </div>
 							  <div class="mdl-card__actions mdl-card--border">
 							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -183,13 +167,13 @@
 							  </div>
 							</div>
 						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="commerce">
+						  <div class="mdl-cell mdl-cell--4-col" id="arts">
 						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
 							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">COMMERCE</h2>
+							    <h2 class="mdl-card__title-text">ARTS</h2>
 							  </div>
 							  <div class="mdl-card__supporting-text">
-							    From staistics to accounts, LHCstairs is your best friend. 
+							    From photography to dance, LHCstairs is your best friend. 
 							  </div>
 							  <div class="mdl-card__actions mdl-card--border">
 							    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
