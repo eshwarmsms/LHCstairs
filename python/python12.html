@@ -1,0 +1,178 @@
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LHCstairs - Engineering</title>
+  <link rel="stylesheet" href="../mdl/material.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style type="text/css">
+    @font-face{
+      font-family: 'hello';
+      src: url('../assets/fonts/Kannada.ttc');
+    }
+    body{
+      background: url('../assets/images/backtile.png') bottom right repeat;
+      margin: 0px;
+      padding: 0px;
+
+    }
+    .content{
+      background: white;
+    }
+    .demo-layout-transparent {
+      background: url('../assets/images/backtile.png') center no-repeat cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: rgba(1,1,1,.87);
+    }
+    .mdl-navigation > a{
+      color: rgba(1,1,1,.87);
+      text-decoration: none;
+    }
+    .mdl-grid{
+      width: 80%;
+    }
+    .demo-card-square.mdl-card {
+      width: 100%;
+      height: 320px;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff
+    }
+    .mdl-layout__header-row{
+        text-align: center;
+        color: white;
+        background: url('../assets/images/header2.jpg') center / cover;  
+        margin-top: 0px;
+        padding-top: 0px; 
+    }
+    .mdl-layout-title, .mobile-header > h1{
+      font-family: 'hello';
+      color: rgba(1,1,1,.87);
+    }
+    .mdl-card > .mdl-card__title{
+      color: rgba(0, 0, 0, .87);
+    }
+    #python > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/python.jpg') center / cover #46B6AC;
+    }
+  </style>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-subtitle">Python</span>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">LHCstairs</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="python.html">Description</a>
+      <a class="mdl-navigation__link" href="python1.html">What will you get out of it</a>
+      <a class="mdl-navigation__link" href="python2.html">Minimum time to learn</a>
+      <a class="mdl-navigation__link" href="python3.html">How to make money/how to become famous from this/how to get the best out of it. With attractive real-life examples which will make it look easy for anyone to achieve in that field.</a>
+      <a class="mdl-navigation__link" href="python4.html">Inspiring stories</a>
+      <a class="mdl-navigation__link" href="python5.html">Career opportunities</a>
+      <a class="mdl-navigation__link" href="python6.html">Pre-requisites to start learning this field + skill set required</a>
+      <a class="mdl-navigation__link" href="python7.html">Money requirements</a>
+      <a class="mdl-navigation__link" href="python8.html">What to buy/infrastructure</a>
+      <a class="mdl-navigation__link" href="python9.html">Best FREE online source</a>
+      <a class="mdl-navigation__link" href="python10.html">Attitude to learn</a>
+      <a class="mdl-navigation__link" href="python11.html">Best FAQ forums online and their links</a>
+      <a class="mdl-navigation__link" href="#">What to stress on from beginning</a>
+      <a class="mdl-navigation__link" href="python13.html">Free time mini projects</a>
+      <a class="mdl-navigation__link" href="python14.html">Popular rookie mistakes and how you can avoid them</a>
+      <a class="mdl-navigation__link" href="python15.html">How to perfect the art:</a>
+      <a class="mdl-navigation__link" href="python16.html">Expert’s say.</a>
+      <a class="mdl-navigation__link" href="python17.html">VIDEO(will be taken care of by me</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+      <div class="demo-crumbs mdl-color-text--grey-500" style="padding: 30px;" id="content">
+        <h3>What to stress on from beginning</h3>
+        <p>
+The thing you need to focus on from the beginning is the syntax and the programming style and how to master that.
+
+
+        </p>
+      </div>
+      </div>
+          <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer__middle-section">
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Features</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Updates</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Details</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Specs</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Technology</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Patterns</a></li>
+                  <li><a href="#">Usage</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Contracts</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">FAQ</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Questions</a></li>
+                  <li><a href="#">Answers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mdl-mega-footer__bottom-section">
+              <div class="mdl-logo">LHCstairs</div>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>
+    </div>
+  </main>
+</div>
+</body>
+</html>
+
