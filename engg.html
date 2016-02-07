@@ -1,0 +1,262 @@
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LHCstairs - Engineering</title>
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style type="text/css">
+    @font-face{
+      font-family: 'hello';
+      src: url('assets/fonts/Kannada.ttc');
+    }
+    body{
+      background: url('assets/images/backtile.png') bottom right repeat;
+      margin: 0px;
+      padding: 0px;
+
+    }
+    .demo-layout-transparent {
+      background: url('assets/images/backtile.png') center no-repeat cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: rgba(1,1,1,.87);
+    }
+    .mdl-navigation > a{
+      color: rgba(1,1,1,.87);
+      text-decoration: none;
+    }
+    .mdl-grid{
+      width: 80%;
+    }
+    .demo-card-square.mdl-card {
+      width: 100%;
+      height: 320px;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff
+    }
+    .mdl-layout__header-row{
+        text-align: center;
+        color: white;
+        background: url('assets/images/header2.jpg') center / cover;  
+        margin-top: 0px;
+        padding-top: 0px; 
+    }
+    .mdl-layout-title, .mobile-header > h1{
+      font-family: 'hello';
+      color: rgba(1,1,1,.87);
+    }
+    .mdl-card > .mdl-card__title{
+      color: rgba(0, 0, 0, .87);
+    }
+    #c > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/c.jpg') center / cover #46B6AC;
+    }
+    #python > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/python.jpg') center / cover #46B6AC;
+    }
+    #java > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/java.png') center / cover #46B6AC;
+    }
+    #cpp > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/cpp.png') center / cover #46B6AC;
+    }
+    #html > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/html.png') center / cover #46B6AC;
+    }
+  </style>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-subtitle">Engineering</span>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">LHCstairs</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">C</a>
+      <a class="mdl-navigation__link" href="">Python</a>
+      <a class="mdl-navigation__link" href="">Java</a>
+      <a class="mdl-navigation__link" href="">C++</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <article>
+
+            <div class="content-grid mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col" id="c">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">C</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  From C to thermodynamics, LHCstairs is your best friend. 
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="java">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">JAVA</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  From photography to dance, LHCstairs is your best friend. 
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">             
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="cpp">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">CPP</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  From football to Table Tennis, LHCstairs is your best friend. 
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="java">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">JAVA</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  From Chemistry to Physics, LHCstairs is your best friend. 
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="c">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">C</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  From staistics to accounts, LHCstairs is your best friend. 
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="html">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">HTML</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  From C to python, from msm to thermodynamics, LHCstairs is your best friend. 
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    see contents
+                  </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </article>
+          <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer__middle-section">
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Features</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Updates</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Details</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Specs</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Technology</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Patterns</a></li>
+                  <li><a href="#">Usage</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Contracts</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">FAQ</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Questions</a></li>
+                  <li><a href="#">Answers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mdl-mega-footer__bottom-section">
+              <div class="mdl-logo">LHCstairs</div>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>
+    </div>
+  </main>
+</div>
+</body>
+</html>
+
