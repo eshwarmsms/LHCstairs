@@ -34,8 +34,15 @@
 		.mdl-layout--small-screen-only{
 				background: url('assets/images/header2.jpg') center / cover;
 		}
-		.mdl-layout-title, .mobile-header > h1{
+		#title{
+			width: 100%
+		}
+		#title > .mdl-card__title > .mdl-card__title-text{
 			font-family: 'hello';
+		}
+		#title, .mdl-layout-title, .mobile-header > h1{
+			font-family: 'hello';
+			text-align: center;
 			color: rgba(0,0,0,.87);
 		}
 		.demo-layout-waterfall {
@@ -59,6 +66,7 @@
 		  height: 320px;
 		}
 		.demo-card-square > .mdl-card__title {
+			background: #46B6AC;
 		  color: #fff
 		}
 		#engg > .mdl-card > .mdl-card__title{
@@ -90,7 +98,6 @@
 
   ga('create', 'UA-73470719-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 	</head>
 	<body>
@@ -130,150 +137,108 @@
 			    </nav>
 			</div>
 			<main class="mdl-layout__content">
-			  	<article>
-						<div class="content-grid mdl-grid">
-						  <div class="mdl-cell mdl-cell--4-col" id="engg">
-						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">ENGINEERING</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    From C to thermodynamics, LHCstairs is your best friend. 
-							  </div>
-							  <div class="mdl-card__actions mdl-card--border">
-							    <a href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							      View Topics
-							    </a>
-							  </div>
-							</div>
-						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="arts">
-						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">ARTS</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    From photography to dance, LHCstairs is your best friend. 
-							  </div>
-							  <div class="mdl-card__actions mdl-card--border">
-							    <a href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							      View Topics
-							    </a>
-							  </div>
-							</div>
-						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="sports">
-						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">SPORTS</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    From football to Table Tennis, LHCstairs is your best friend. 
-							  </div>
-							  <div class="mdl-card__actions mdl-card--border">
-							    <a href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							      View Topics
-							    </a>
-							  </div>
-							</div>
-						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="science">
-						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">SCIENCE</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    From Chemistry to Physics, LHCstairs is your best friend. 
-							  </div>
-							  <div class="mdl-card__actions mdl-card--border">
-							    <a href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							      View Topics
-							    </a>
-							  </div>
-							</div>
-						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="commerce">
-						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">COMMERCE</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    From staistics to accounts, LHCstairs is your best friend. 
-							  </div>
-							  <div class="mdl-card__actions mdl-card--border">
-							    <a  href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							      View Topics
-							    </a>
-							  </div>
-							</div>
-						  </div>
-						  <div class="mdl-cell mdl-cell--4-col" id="engg">
-						    <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-							  <div class="mdl-card__title mdl-card--expand">
-							    <h2 class="mdl-card__title-text">ENGINEERING</h2>
-							  </div>
-							  <div class="mdl-card__supporting-text">
-							    From C to python, from msm to thermodynamics, LHCstairs is your best friend. 
-							  </div>
-							  <div class="mdl-card__actions mdl-card--border">
-							    <a href="engg.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							      View Topics
-							    </a>
-							  </div>
-							</div>
-						  </div>
-						</div>
-					</article>
-					<footer class="mdl-mega-footer">
-					  <div class="mdl-mega-footer__middle-section">
-					    <div class="mdl-mega-footer__drop-down-section">
-					      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					      <h1 class="mdl-mega-footer__heading">Features</h1>
-					      <ul class="mdl-mega-footer__link-list">
-					        <li><a href="#">About</a></li>
-					        <li><a href="#">Terms</a></li>
-					        <li><a href="#">Partners</a></li>
-					        <li><a href="#">Updates</a></li>
-					      </ul>
-					    </div>
-					    <div class="mdl-mega-footer__drop-down-section">
-					      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					      <h1 class="mdl-mega-footer__heading">Details</h1>
-					      <ul class="mdl-mega-footer__link-list">
-					        <li><a href="#">Specs</a></li>
-					        <li><a href="#">Tools</a></li>
-					        <li><a href="#">Resources</a></li>
-					      </ul>
-					    </div>
-					    <div class="mdl-mega-footer__drop-down-section">
-					      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					      <h1 class="mdl-mega-footer__heading">Technology</h1>
-					      <ul class="mdl-mega-footer__link-list">
-					        <li><a href="#">How it works</a></li>
-					        <li><a href="#">Patterns</a></li>
-					        <li><a href="#">Usage</a></li>
-					        <li><a href="#">Products</a></li>
-					        <li><a href="#">Contracts</a></li>
-					      </ul>
-					    </div>
-					    <div class="mdl-mega-footer__drop-down-section">
-					      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-					      <h1 class="mdl-mega-footer__heading">FAQ</h1>
-					      <ul class="mdl-mega-footer__link-list">
-					        <li><a href="#">Questions</a></li>
-					        <li><a href="#">Answers</a></li>
-					        <li><a href="#">Contact us</a></li>
-					      </ul>
-					    </div>
+
+				<!-- DESCRIPTION CARD -->
+				<div class="content-grid mdl-grid">
+					<div class="mdl-card mdl-shadow--4dp" id="title">
+						<div class="mdl-card__title">
+					     <h1 class="mdl-card__title-text" >Welcome to LHCSTAIRS.COM</h1>
 					  </div>
-					  <div class="mdl-mega-footer__bottom-section">
-					    <div class="mdl-logo">LHCstairs</div>
-					    <ul class="mdl-mega-footer__link-list">
-					      <li><a href="#">Help</a></li>
-					      <li><a href="#">Privacy & Terms</a></li>
-					    </ul>
+					  <div class="mdl-card__supporting-text">
+					    Your one-solution to all the basic beginner doubts and concerns you have on any topic
 					  </div>
-					</footer>
+					  <div class="mdl-card__supporting-text">
+					  Want to learn something new? Then you are in the perfect place to get the perfect guidance before you begin to learn it.  Decide for yourself about getting into learning the new thing. Know what you are getting into. Explore other similar options.
+					  </div>
+					</div>
+				</div>
+
+				<!-- CARD LAYOUT FOR MENU OPTIONS -->
+				<div class="content-grid mdl-grid">
+					<!--COURSE CARD -->
+					<div class="mdl-cell mdl-cell--4-col">
+						<a href="course.html">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp mdl-js-ripple-effect mdl-js-button mdl-button--colored" >
+							  <div class="mdl-card__title mdl-card--expand">
+							    <h2 class="mdl-card__title-text">COURSES</h2>
+							  </div>
+							</div>
+						</a>
+					</div>
+
+					<!--ABOUT US CARD -->
+					<div class="mdl-cell mdl-cell--4-col">
+						<a href="course.html">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp mdl-js-ripple-effect mdl-js-button mdl-button--colored" >
+							  <div class="mdl-card__title mdl-card--expand">
+							    <h2 class="mdl-card__title-text">ABOUT US</h2>
+							  </div>
+							</div>
+						</a>
+					</div>
+
+					<!--CONTACT US CARD -->
+					<div class="mdl-cell mdl-cell--4-col">
+						<a href="course.html">
+							<div class="demo-card-square mdl-card mdl-shadow--2dp mdl-js-ripple-effect mdl-js-button mdl-button--colored" >
+							  <div class="mdl-card__title mdl-card--expand">
+							    <h2 class="mdl-card__title-text">CONTACT US</h2>
+							  </div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<footer class="mdl-mega-footer">
+				  <div class="mdl-mega-footer__middle-section">
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">Features</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">About</a></li>
+				        <li><a href="#">Terms</a></li>
+				        <li><a href="#">Partners</a></li>
+				        <li><a href="#">Updates</a></li>
+				      </ul>
+				    </div>
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">Details</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">Specs</a></li>
+				        <li><a href="#">Tools</a></li>
+				        <li><a href="#">Resources</a></li>
+				      </ul>
+				    </div>
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">Technology</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">How it works</a></li>
+				        <li><a href="#">Patterns</a></li>
+				        <li><a href="#">Usage</a></li>
+				        <li><a href="#">Products</a></li>
+				        <li><a href="#">Contracts</a></li>
+				      </ul>
+				    </div>
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">Questions</a></li>
+				        <li><a href="#">Answers</a></li>
+				        <li><a href="#">Contact us</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				  <div class="mdl-mega-footer__bottom-section">
+				    <div class="mdl-logo">LHCstairs</div>
+				    <ul class="mdl-mega-footer__link-list">
+				      <li><a href="#">Help</a></li>
+				      <li><a href="#">Privacy & Terms</a></li>
+				    </ul>
+				  </div>
+				</footer>
 	  	</main>
 		</div>
 	</body>
