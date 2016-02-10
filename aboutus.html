@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LHC Stairs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Material Design -->
+		<link rel="stylesheet" href="mdl/material.min.css">
+		<script src="mdl/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--
+		<script defer src="https://code.getmdl.io/1.1.1/material.min.js" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.indigo-pink.min.css"> 	-->	
+
+		<style>
+		@font-face{
+			font-family: 'hello';
+			src: url('assets/fonts/Kannada.ttc');
+		}
+		body{
+			background: url('assets/images/backtile.png') bottom right repeat;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		
+		header{
+				text-align: center;
+				color: white;
+				background: url('assets/images/header2.jpg') center / cover;	
+				margin-top: 0px;
+				padding-top: 0px; 
+		}
+		.mdl-layout--small-screen-only{
+				background: url('assets/images/header2.jpg') center / cover;
+		}
+		#title{
+			width: 100%
+		}
+		#title > .mdl-card__title > .mdl-card__title-text{
+			font-family: 'hello';
+		}
+		#title, .mdl-layout-title, .mobile-header > h1{
+			font-family: 'hello';
+			text-align: center;
+			color: rgba(0,0,0,.87);
+		}
+		.demo-layout-waterfall {
+			//background: url('assets/images/backtile.png') center no-repeat cover;
+		}
+		.demo-layout-waterfall .mdl-layout__header,
+		.demo-layout-waterfall .mdl-layout__drawer-button {
+		  /* This background is dark, so we set text to white. Use 87% black instead if
+		     your background is light. */
+		  color: rgba(0,0,0,.87);
+		}
+		.demo-layout-waterfall .mdl-navigation > a{
+			color: rgba(0,0,0,.87);
+			text-decoration: none;
+		}
+    #homelink{
+      text-decoration: none;
+      color: rgba(1,1,1,.87);
+    }
+    .card{
+			padding: 15px;
+			width: 100%;
+    }
+		.mdl-card{
+			padding: 10px;
+		}
+		.mdl-grid{
+			width: 80%;
+		}
+		.mdl-cell a{
+			text-decoration: none;
+		}
+		.demo-card-square.mdl-card {
+		  width: 100%;
+		  height: 320px;
+		}
+		.demo-card-square > .mdl-card__title {
+			background: #46B6AC;
+		  color: #fff
+		}
+		#engg > .mdl-card > .mdl-card__title{
+			background:
+		    url('assets/images/engineer.jpg') center / cover #46B6AC;
+		}
+		#arts > .mdl-card > .mdl-card__title{
+			background:
+		    url('assets/images/arts.jpg') center / cover #46B6AC;
+		}
+		#sports > .mdl-card > .mdl-card__title{
+			background:
+		    url('assets/images/sports.jpg') center / cover #46B6AC;
+		}
+		#science > .mdl-card > .mdl-card__title{
+			background:
+		    url('assets/images/science.jpg') center / cover #46B6AC;
+		}
+		#commerce > .mdl-card > .mdl-card__title{
+			background:
+		    url('assets/images/commerce.png') center / cover #46B6AC;
+		}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73470719-1', 'auto');
+  ga('send', 'pageview');
+</script>
+	</head>
+	<body>
+		
+		<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+		  <header class="mdl-layout__header mdl-layout__header--waterfall">
+		    <div class="mdl-layout__header-row">
+		      <!-- Title -->
+			      <span class="mdl-layout-title"><a href="index.html" id="homelink">LHCstairs.com</a></span>
+			      <!-- Add spacer, to align navigation to the right -->
+			      <div class="mdl-layout-spacer"></div>
+			      <!-- Navigation -->
+			      <nav class="mdl-navigation">
+			        <a class="mdl-navigation__link" href="index.html">HOME</a>
+			        <a class="mdl-navigation__link" href="course.html">COURSES</a>
+			        <a class="mdl-navigation__link" href="#">ABOUT US</a>
+			        <a class="mdl-navigation__link" href="">CONTACT US</a>
+			      </nav>
+			  </div>
+			  <div class="mdl-layout__header-row">
+
+			  </div>
+			</header>
+		 	<div class="mdl-layout--small-screen-only">
+			  <!-- Mobile Only-->
+				<header class="mobile-header">
+				  <h1>LHCstairs.com</h1>
+				</header>
+			</div>
+			<div class="mdl-layout__drawer">
+			    <span class="mdl-layout-title"><a href="index.html" id="homelink">LHCstairs.com</a></span>
+			    <nav class="mdl-navigation">
+			        <a class="mdl-navigation__link" href="index.html">HOME</a>
+			        <a class="mdl-navigation__link" href="course.html">COURSES</a>
+			        <a class="mdl-navigation__link" href="#">ABOUT US</a>
+			        <a class="mdl-navigation__link" href="">CONTACT US</a>
+			    </nav>
+			</div>
+			<main class="mdl-layout__content">
+
+				<!-- DESCRIPTION CARD -->
+				<div class="content-grid mdl-grid">
+					<div class="card">
+						<div class="mdl-card mdl-shadow--4dp" id="title">
+							<div class="mdl-card__title">
+						      <h1 class="mdl-card__title-text" >Welcome to LHCSTAIRS.COM</h1>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  LHCstairs is a social start-up started and run by a group of seven highly motivated and highly restless young college students. LHCstairs.com is a website (like Wikipedia) which aims to spread knowledge and clarity of thought around the world free of cost. It is aimed to serve the needs of restless and curious people across the globe who are looking to learn something new. This is a website which helps the person decide and judge what he/she wants to learn. It gives a crisp and an highly important overview of the field/topic he/she wants to learn. 
+						  </div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="mdl-card mdl-shadow--4dp" id="title">
+							<div class="mdl-card__title">
+						     	<h1 class="mdl-card__title-text" >How will this website help you?</h1>
+						 	</div>
+							<div class="mdl-card__supporting-text">
+								<ul>
+									<li>A strong sense of satisfaction and understanding about what you are getting into.</li>
+									<li>Decide whether you indeed want to start learning or whether or not it is worth the while.</li>
+									<li>Helps you create a general road map in their minds.</li>
+									<li>Puts you on the RIGHT AND PERFECT path to start learning.</li>
+									<li>Ideas to do mini projects during free time.</li>
+									<li>And many mor</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="mdl-card mdl-shadow--4dp" id="title">
+							<div class="mdl-card__title">
+						      <h1 class="mdl-card__title-text" >The story behind LHCstairs.com</h1>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  “I was in a cab on the way to my dad’s office...”
+	My dad being the founder and CEO of Politron technologies pvt ltd (Being a technology products and solutions company, promoted by technocrats in Embedded Electronics, Telecommunications, Software Development, Product Development and End-to-end solution Architecture with over 6 decades of IT and Industrial expertise, the company is now into custom ODM and OEM product development in specific Technology domains.) 
+	“I was in a cab on the way to my dad’s office. I had been asked to go there regarding an assignment/job. This assignment required the knowledge of PHP which I was ready to learn from scratch(I had no idea what PHP was at that point). But as the cab steered through the dense traffic, a big concern arouse in me. Which is the best free online source to learn PHP? I quickly googled it and found out that different websites told me different answers. Out of this confusion arouse more confusions. I suddenly found myself with doubts like: What exactly is PHP fundamentally? Can I make a career out of it? Which is the best source to learn it for free? Can I make it big in life from this? What are the mistakes I should avoid as a beginner and how to avoid them? What are some of the best FAQ forums to answer my doubts about PHP? Best books to buy? Right attitude to begin with?How to perfect it? Mini projects for free time? Initial investment? Pre-requisites to learn PHP? And basically a longer list of doubts. 
+	As I got frustrated with these long list of doubts not being answered, I googled some of the questions and found, again, very many different answers. At this point, my brain was a big pool of confusion...
+	Out of this pool of wavy waters arouse an idea. I had just experienced a problem and I wanted to solve it. I realised that I would not, obviously, be the only person to have faced this problem( a survey later confirmed this fact).
+	The idea of LHCstairs took its baby steps in that Uber cab on my way to dad’s office. The website will solve all these problems that a beginner of ANY field will have. A ONE-STOP solution to guide the beginners onto the perfect path. “
+						  </div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="mdl-card mdl-shadow--4dp" id="title">
+							<div class="mdl-card__title">
+						      <h1 class="mdl-card__title-text" >What exactly is LHCstairs.com? </h1>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  As explained by Arjun Kramadhati, founder of LHCstairs.
+	“ I am a mechanical engineering student who is curious to learn other things as well. As of this day, I have learnt Java, Video editing, php and android app development (published 2 apps on the play store). Like me, there are(as confirmed by our survey), thousands and thousands of others who want to learn something apart from the field they are in. That something might be a sport, music programming or anything else. All is well and good till now but when we want to learn something apart from our field, we face a problem. The problem being that all our peer group, contacts, teachers etc are in the field we are in and not outside that (very few outside). Suppose, I want to learn python language being in mechanical field, it is very difficult to get the initial push and the initial guidance to start learning python because I have no one to guide me. All my peers, teachers and other contacts are in mechanical field. So, as an amateur in the field of python, I know nothing about it at the beginning. And I am really frustrated about it. I, as a beginner, have a long list of doubts. The doubts being(taking python as an example):
+	<ul>
+		What is Python?
+	<li>Where is it used?
+	<li>How relevant is it to my field?</li>
+	<li>Can I make a career out of this?</li>
+	<li>If not, what are the other options I have?</li>
+	<li>Can I become famous from this? If so, then how?</li>
+	<li>How fast can I learn this?</li>
+	<li>What is the initial infrastructure and investment required to begin.</li>
+	<li>What is the right attitude to begin?</li>
+	<li>How fast can I learn this?</li>
+	<li>Best source to learn online as well as offline.</li>
+	<li>Usual rookie mistakes and how to avoid them?</li>
+	<li>What to stress on, from the start?</li>
+	<li>Free time mini projects using python.</li>
+	<li>Role models to look up to and their story.</li>
+	<li>And the list just goes on...</li>
+	To answer all these questions, one has to visit not less than 3-4 websites. In fact, one has to visit numerous websites just to answer these questions before they can even begin to start learning it.
+	This situation is a SERIOUS DISCOURAGMENT (as confirmed by our survey) for people who want to learn something new apart from their field. </ul>
+
+	Therefore, on these grounds, I wish to introduce my website LHCstairs.com. Our website answers these crucial and necessary beginner doubts and concerns. It answers just these crucial things for beginners. The beginner can walk out of this website with a sense of satisfaction for acquiring a strong and fundamental idea about the new topic he wants to learn. This severely and surely encourages people to learn something new apart from their field. 
+	It achieves the following:
+	<ul>
+	<li>Encouraging more and more youngsters to do something out of the box instead of wasting time.</li>
+	<li>Helping the people of the world get their understanding clear about what they want to do.</li>
+	<li>Enrich cross platform learning and hence boost the dynamic skill set of an individual.</li>
+	<li>Helping teenagers and curious minds like you and me get their paths straight before it’s too late.</li>
+	<li>Helping the general population of the earth defeat the evils of wasting time.</li>
+	<li>Severely increase and boost the general productivity of the general population.</li>
+	<li>Increase innovation.</li>
+	<li>And the list just goes on...</li>
+	</ul>
+	This is a ONE STOP solution for any curious mind looking to start learning something new. It gives them a clear-cut brief over view of what they are getting into. It helps them decide whether they really want to learn what they want to learn. The website will also feature a 2-3 minute YouTube embedded VIDEO. The video is an animated short video which explains whatever the user has read till then. 
+	We are a crowd edited website like Wikipedia. 50 topics have already been allocated to the public (as of Feb 6th 2016). In about a week’s time, we will have around 100 topics( edited and written by the public) to load onto the website. The website will host the name, email and picture of the person who edited the corresponding topic. 
+	This is a unique website. As far as I know, there are no websites like this anywhere else in the world.  There is a problem that exists and this website will solve it. Solve it once it for all. 
+	This is a social start-up aimed to serve the curious minds of the world for free. “
+
+						  </div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="mdl-card mdl-shadow--4dp" id="title">
+							<div class="mdl-card__title">
+						      <h1 class="mdl-card__title-text" >The A TEAM</h1>
+						  </div>
+						  <div class="mdl-card__supporting-text">
+						  LHCstairs.com is a social start up founded by Arjun Kramadhati with 6 other highly motivated and high spirited young college going students.
+						  <br>
+						  Arjun Kramadhati: Studying 4th semester BE in Mechanical Engineering from MSRIT, Bangalore. Passionate blog writer, Android app developer and a tennis player. Loves the great outdoors and hates to see loose ends.
+						  <br>
+							Prakruti P Kumar: Studying 4th semester BE in Telecom Engineering from MSRIT, Bangalore. World's youngest recipient of the ARPS title from the Royal Photographic Society. A gifted Wildlife Photographer with a huge love for nature. 
+							<br>
+							Rajatha Prabhu: Studying 4th semester BE in Computer Science Engineering from MSRIT, Bangalore. A super avid book reader with a fine proficiency over English language. Loves to write, blog and explore the world and it's diverse people. 
+							<br>
+							Darshan Raju: Studying 4th semester BE in Mechanical Engineering from MSRIT, Bangalore. A highly gifted guitar player with a infatuation towards music and it's intricate workings. Now trying his hand in the vast world of music mixing and recording. 
+							<br>
+							Rahul Gopal: Studying 4th semester BE in Telecom Engineering from MSRIT, Bangalore. An extremely passionate outdoors person with a gifted talent for wildlife photography. Boasts a clear understanding of the intricate workings of photography and cameras. 
+							<br>
+							Kumar Gaurav: Studying 4th semester BE in Mechanical Engineering from MSRIT, Bangalore. A basic tech-geek who loves to code. A passionate web developer and an inclination towards android development. Boasts a knowledge of a wide set of programming languages. 
+							<br>
+							Eshwar: Studying 4th semester BE in Information Science Engineering from MSRIT. Loves to code, code and code. He is an avid web developer and is into android app development as well. Boasts a super wide expertise and knowledge over different softwares and programming languages. He is the person who designed and developed this website.
+						</div>
+					</div>
+				</div>
+
+
+
+
+				</div>
+
+				<!-- Footer -->
+				<footer class="mdl-mega-footer">
+				  <div class="mdl-mega-footer__middle-section">
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">Features</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">About</a></li>
+				        <li><a href="#">Terms</a></li>
+				        <li><a href="#">Partners</a></li>
+				        <li><a href="#">Updates</a></li>
+				      </ul>
+				    </div>
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">Details</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">Specs</a></li>
+				        <li><a href="#">Tools</a></li>
+				        <li><a href="#">Resources</a></li>
+				      </ul>
+				    </div>
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">Technology</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">How it works</a></li>
+				        <li><a href="#">Patterns</a></li>
+				        <li><a href="#">Usage</a></li>
+				        <li><a href="#">Products</a></li>
+				        <li><a href="#">Contracts</a></li>
+				      </ul>
+				    </div>
+				    <div class="mdl-mega-footer__drop-down-section">
+				      <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+				      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+				      <ul class="mdl-mega-footer__link-list">
+				        <li><a href="#">Questions</a></li>
+				        <li><a href="#">Answers</a></li>
+				        <li><a href="#">Contact us</a></li>
+				      </ul>
+				    </div>
+				  </div>
+				  <div class="mdl-mega-footer__bottom-section">
+				    <div class="mdl-logo">LHCstairs</div>
+				    <ul class="mdl-mega-footer__link-list">
+				      <li><a href="#">Help</a></li>
+				      <li><a href="#">Privacy & Terms</a></li>
+				    </ul>
+				  </div>
+				</footer>
+	  	</main>
+		</div>
+	</body>
+</html>
