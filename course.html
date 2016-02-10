@@ -31,6 +31,9 @@
 				margin-top: 0px;
 				padding-top: 0px; 
 		}
+		.mdl-layout__header-row > a{
+			text-decoration: none;
+		}
 		.mdl-layout--small-screen-only{
 				background: url('assets/images/header2.jpg') center / cover;
 		}
@@ -46,6 +49,10 @@
 		  /* This background is dark, so we set text to white. Use 87% black instead if
 		     your background is light. */
 		  color: rgba(0,0,0,.87);
+		}
+		#homelink{
+			color: rgba(0,0,0,.87);
+			text-decoration: none;
 		}
 		.demo-layout-waterfall .mdl-navigation > a{
 			color: rgba(0,0,0,.87);
@@ -107,7 +114,7 @@
 		  <header class="mdl-layout__header mdl-layout__header--waterfall">
 		    <div class="mdl-layout__header-row">
 		      <!-- Title -->
-			      <span class="mdl-layout-title">LHCstairs.com</span>
+			      <span class="mdl-layout-title"><a href="index.html" id="homelink">LHCstairs.com</a></span>
 			      <!-- Add spacer, to align navigation to the right -->
 			      <div class="mdl-layout-spacer"></div>
 			      <!-- Navigation -->
@@ -129,7 +136,7 @@
 				</header>
 			</div>
 			<div class="mdl-layout__drawer">
-			    <span class="mdl-layout-title">LHCstairs.com</span>
+			    <span class="mdl-layout-title"><a href="index.html" id="homelink">LHCstairs.com</a></span>
 			    <nav class="mdl-navigation">
 			        <a class="mdl-navigation__link" href="index.html">HOME</a>
 			        <a class="mdl-navigation__link" href="">COURSES</a>
