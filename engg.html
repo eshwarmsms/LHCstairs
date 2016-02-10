@@ -49,6 +49,9 @@
         margin-top: 0px;
         padding-top: 0px; 
     }
+    .mdl-layout__header-row > a{
+      text-decoration: none;
+    }
     .material-icons, .mdl-layout-subtitle{
       color: rgba(0,0,0,.87);
     }
@@ -61,23 +64,31 @@
     }
     #c > .mdl-card > .mdl-card__title{
       background:
-        url('assets/images/c.jpg') center / cover #46B6AC;
+        url('assets/images/c.png') center / contain no-repeat #46B6AC;
     }
     #python > .mdl-card > .mdl-card__title{
       background:
-        url('assets/images/python.jpg') center / cover #46B6AC;
+        url('assets/images/python.png') center / contain no-repeat #46B6AC;
     }
     #java > .mdl-card > .mdl-card__title{
       background:
-        url('assets/images/java.png') center / cover #46B6AC;
+        url('assets/images/java.png') center / contain no-repeat #46B6AC;
     }
     #cpp > .mdl-card > .mdl-card__title{
       background:
-        url('assets/images/cpp.png') center / cover #46B6AC;
+        url('assets/images/cpp.png') center / contain no-repeat #46B6AC;
     }
     #html > .mdl-card > .mdl-card__title{
       background:
-        url('assets/images/html.png') center / cover #46B6AC;
+        url('assets/images/html.png') center / contain no-repeat #46B6AC;
+    }
+    #python > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/python.png') center / contain no-repeat #46B6AC;
+    }
+    #css > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/css.png') center / contain no-repeat #46B6AC;
     }
   </style>
   <script>
@@ -112,12 +123,14 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">LHCstairs</span>
+    <a href="index.html"><span class="mdl-layout-title">LHCstairs</span></a>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">C</a>
-      <a class="mdl-navigation__link" href="">Python</a>
+      <a class="mdl-navigation__link" href="python/python.html">Python</a>
       <a class="mdl-navigation__link" href="">Java</a>
       <a class="mdl-navigation__link" href="">C++</a>
+      <a class="mdl-navigation__link" href="">C</a>
+      <a class="mdl-navigation__link" href="">HTML</a>
+      <a class="mdl-navigation__link" href="">CSS</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -125,13 +138,10 @@
       <article>
 
             <div class="content-grid mdl-grid">
-              <div class="mdl-cell mdl-cell--4-col" id="c">
+              <div class="mdl-cell mdl-cell--4-col" id="python">
                 <div class="demo-card-square mdl-card mdl-shadow--2dp" >
                 <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">C</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  From C to thermodynamics, LHCstairs is your best friend. 
+                  <h2 class="mdl-card__title-text">PYTHON</h2>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -144,9 +154,6 @@
                 <div class="demo-card-square mdl-card mdl-shadow--2dp" >
                 <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">JAVA</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  From photography to dance, LHCstairs is your best friend. 
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">             
@@ -160,24 +167,6 @@
                 <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">CPP</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                  From football to Table Tennis, LHCstairs is your best friend. 
-                </div>
-                <div class="mdl-card__actions mdl-card--border">
-                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    See Contents 
-                  </a>
-                </div>
-              </div>
-              </div>
-              <div class="mdl-cell mdl-cell--4-col" id="java">
-                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
-                <div class="mdl-card__title mdl-card--expand">
-                  <h2 class="mdl-card__title-text">JAVA</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  From Chemistry to Physics, LHCstairs is your best friend. 
-                </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                     See Contents 
@@ -189,9 +178,6 @@
                 <div class="demo-card-square mdl-card mdl-shadow--2dp" >
                 <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">C</h2>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  From staistics to accounts, LHCstairs is your best friend. 
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -205,8 +191,17 @@
                 <div class="mdl-card__title mdl-card--expand">
                   <h2 class="mdl-card__title-text">HTML</h2>
                 </div>
-                <div class="mdl-card__supporting-text">
-                  From C to python, from msm to thermodynamics, LHCstairs is your best friend. 
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="css">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">CSS</h2>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                   <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
