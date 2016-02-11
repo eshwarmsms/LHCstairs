@@ -8,65 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../mdl/material.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <style type="text/css">
-    @font-face{
-      font-family: 'hello';
-      src: url('../assets/fonts/Kannada.ttc');
-    }
-    body{
-      background: url('../assets/images/backtile.png') bottom right repeat;
-      margin: 0px;
-      padding: 0px;
-
-    }
-    .content{
-      background: white;
-    }
-    .demo-layout-transparent {
-      background: url('../assets/images/backtile.png') center no-repeat cover;
-    }
-    .demo-layout-transparent .mdl-layout__header,
-    .demo-layout-transparent .mdl-layout__drawer-button {
-      /* This background is dark, so we set text to white. Use 87% black instead if
-         your background is light. */
-      color: rgba(1,1,1,.87);
-    }
-    .mdl-navigation > a{
-      color: rgba(1,1,1,.87);
-      text-decoration: none;
-    }
-    .material-icons, .mdl-layout-subtitle{
-      color: rgba(0,0,0,.87);
-    }
-    .mdl-grid{
-      width: 80%;
-    }
-    .demo-card-square.mdl-card {
-      width: 100%;
-      height: 320px;
-    }
-    .demo-card-square > .mdl-card__title {
-      color: #fff
-    }
-    .mdl-layout__header-row{
-        text-align: center;
-        color: white;
-        background: url('../assets/images/header2.jpg') center / cover;  
-        margin-top: 0px;
-        padding-top: 0px; 
-    }
-    .mdl-layout-title, .mobile-header > h1{
-      font-family: 'hello';
-      color: rgba(1,1,1,.87);
-    }
-    .mdl-card > .mdl-card__title{
-      color: rgba(0, 0, 0, .87);
-    }
-    #python > .mdl-card > .mdl-card__title{
-      background:
-        url('assets/images/python.jpg') center / cover #46B6AC;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="python.css">
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -99,7 +41,7 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">LHCstairs</span>
+    <span class="mdl-layout-title"><a href="../index.html" id="homelink">LHCstairs</a></span>
     <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="#">Description</a>
       <a class="mdl-navigation__link" href="python1.html">What will you get out of it</a>
