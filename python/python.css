@@ -23,14 +23,17 @@
     .demo-layout-transparent .mdl-layout__drawer-button {
       /* This background is dark, so we set text to white. Use 87% black instead if
          your background is light. */
-      color: rgba(0, 0, 0, .87);
+      color: white;
     }
     .mdl-navigation > a{
       color: rgba(0, 0, 0, .87);
       text-decoration: none;
     }
-    .material-icons, .mdl-layout-subtitle{
+    .material-icons{
       color: rgba(0,0,0,.87);
+    }
+    .mdl-layout-subtitle{
+      color: white;
     }
     .mdl-grid{
       width: 80%;
@@ -45,7 +48,7 @@
     .mdl-layout__header-row{
         text-align: center;
         color: white;
-        background: url('../assets/images/header2.jpg') center / cover;  
+        background: url('../assets/images/header1.jpg') center / cover;  
         margin-top: 0px;
         padding-top: 0px; 
     }

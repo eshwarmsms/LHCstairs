@@ -1,0 +1,66 @@
+<style type="text/css">
+    @font-face{
+      font-family: 'hello';
+      src: url('../assets/fonts/Kannada.ttc');
+    }
+    body{
+      background: url('../assets/images/backtile.png') bottom right repeat;
+      margin: 0px;
+      padding: 0px;
+
+    }
+    #homelink{
+      text-decoration: none;
+      color: rgba(0, 0, 0,.87);
+    }
+    .content{
+      background: white;
+    }
+    .demo-layout-transparent {
+      background: url('../assets/images/backtile.png') center no-repeat cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: white;
+    }
+    .mdl-navigation > a{
+      color: rgba(0, 0, 0, .87);
+      text-decoration: none;
+    }
+    .material-icons{
+      color: rgba(0,0,0,.87);
+    }
+    .mdl-layout-subtitle{
+      color: white;
+    }
+    .mdl-grid{
+      width: 80%;
+    }
+    .demo-card-square.mdl-card {
+      width: 100%;
+      height: 320px;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff
+    }
+    .mdl-layout__header-row{
+        text-align: center;
+        color: white;
+        background: url('../assets/images/header1.jpg') center / cover;  
+        margin-top: 0px;
+        padding-top: 0px; 
+    }
+    .mdl-layout-title, .mobile-header > h1{
+      font-family: 'hello';
+      color: rgba(1,1,1,.87);
+    }
+    .mdl-card > .mdl-card__title{
+      color: rgba(0, 0, 0, .87);
+    }
+    #python > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/python.jpg') center / cover #46B6AC;
+    }
+  </style>
