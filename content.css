@@ -1,10 +1,10 @@
 <style type="text/css">
     @font-face{
       font-family: 'hello';
-      src: url('../assets/fonts/Kannada.ttc');
+      src: url('assets/fonts/Kannada.ttc');
     }
     body{
-      background: url('../assets/images/backtile.png') bottom right repeat;
+      background: url('assets/images/backtile.png') bottom right repeat;
       margin: 0px;
       padding: 0px;
 
@@ -17,7 +17,7 @@
       background: white;
     }
     .demo-layout-transparent {
-      background: url('../assets/images/backtile.png') center no-repeat cover;
+      background: url('assets/images/backtile.png') center no-repeat cover;
     }
     .demo-layout-transparent .mdl-layout__header,
     .demo-layout-transparent .mdl-layout__drawer-button {
@@ -48,7 +48,7 @@
     .mdl-layout__header-row{
         text-align: center;
         color: white;
-        background: url('../assets/images/header1.jpg') center / cover;  
+        background: url('assets/images/header1.jpg') center / cover;  
         margin-top: 0px;
         padding-top: 0px; 
     }

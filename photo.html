@@ -1,0 +1,274 @@
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phtography - LHCstairs</title>
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style type="text/css">
+    @font-face{
+      font-family: 'hello';
+      src: url('assets/fonts/Kannada.ttc');
+    }
+    body{
+      background: url('assets/images/backtile.png') bottom right repeat;
+      margin: 0px;
+      padding: 0px;
+
+    }
+    .demo-layout-transparent {
+      background: url('assets/images/backtile.png') center no-repeat cover;
+    }
+    .demo-layout-transparent .mdl-layout__header,
+    .demo-layout-transparent .mdl-layout__drawer-button {
+      /* This background is dark, so we set text to white. Use 87% black instead if
+         your background is light. */
+      color: rgba(1,1,1,.87);
+    }
+    #homelink{
+      text-decoration: none;
+      color: rgba(1,1,1,.87);
+    }
+    .mdl-navigation > a{
+      color: rgba(1,1,1,.87);
+      text-decoration: none;
+    }
+    .mdl-grid{
+      width: 80%;
+    }
+    .demo-card-square.mdl-card {
+      width: 100%;
+      height: 320px;
+    }
+    .demo-card-square > .mdl-card__title {
+      color: #fff
+    }
+    .mdl-layout__header-row{
+        text-align: center;
+        color: white;
+        background: url('assets/images/header1.jpg') center / cover;  
+        margin-top: 0px;
+        padding-top: 0px; 
+    }
+    .mdl-layout__header-row > a{
+      text-decoration: none;
+    }
+    .material-icons, .mdl-layout-subtitle{
+      color: white;
+    }
+    .mdl-layout-title, .mobile-header > h1{
+      font-family: 'hello';
+      color: white;
+    }
+    .mdl-card > .mdl-card__title{
+      color: white;
+    }
+    #c > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/c.png') center / contain no-repeat #46B6AC;
+    }
+    #python > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/python.png') center / contain no-repeat #46B6AC;
+    }
+    #java > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/java.png') center / contain no-repeat #46B6AC;
+    }
+    #cpp > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/cpp.png') center / contain no-repeat #46B6AC;
+    }
+    #html > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/html.png') center / contain no-repeat #46B6AC;
+    }
+    #python > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/python.png') center / contain no-repeat #46B6AC;
+    }
+    #css > .mdl-card > .mdl-card__title{
+      background:
+        url('assets/images/css.png') center / contain no-repeat #46B6AC;
+    }
+  </style>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73470719-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+            mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-subtitle">Photography</span>
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                  mdl-textfield--floating-label mdl-textfield--align-right">
+        <label class="mdl-button mdl-js-button mdl-button--icon"
+               for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title"><a href="index.html" id="homelink">LHCstairs</a></span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="python/python.html">Wildlife Photography</a>
+      <a class="mdl-navigation__link" href="">Photography 1</a>
+      <a class="mdl-navigation__link" href="">Photography 2</a>
+      <a class="mdl-navigation__link" href="">Photography 3</a>
+      <a class="mdl-navigation__link" href="">Photography 4</a>
+      <a class="mdl-navigation__link" href="">Photography 5</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <article>
+
+            <div class="content-grid mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col" id="wild">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">Wildlife Photography</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="wildlife/wldlfphoto1.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="java">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">JAVA</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">             
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="cpp">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">CPP</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="c">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">C</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="html">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">HTML</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    See Contents 
+                  </a>
+                </div>
+              </div>
+              </div>
+              <div class="mdl-cell mdl-cell--4-col" id="css">
+                <div class="demo-card-square mdl-card mdl-shadow--2dp" >
+                <div class="mdl-card__title mdl-card--expand">
+                  <h2 class="mdl-card__title-text">CSS</h2>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a href="python/python.html" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                    see contents
+                  </a>
+                </div>
+              </div>
+              </div>
+            </div>
+          </article>
+          <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer__middle-section">
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Features</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Updates</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Details</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Specs</a></li>
+                  <li><a href="#">Tools</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">Technology</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Patterns</a></li>
+                  <li><a href="#">Usage</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Contracts</a></li>
+                </ul>
+              </div>
+              <div class="mdl-mega-footer__drop-down-section">
+                <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                <h1 class="mdl-mega-footer__heading">FAQ</h1>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Questions</a></li>
+                  <li><a href="#">Answers</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mdl-mega-footer__bottom-section">
+              <div class="mdl-logo">LHCstairs</div>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+              </ul>
+            </div>
+          </footer>
+    </div>
+  </main>
+</div>
+</body>
+</html>
+
